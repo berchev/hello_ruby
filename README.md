@@ -6,6 +6,8 @@ Simple app that prints "hello"
 
 ## Files ###
 - `hello.rb` This is our simple app code
+- `Vagrantfile` File needed to create your DEV environment
+- `install_ruby.sh` File located in `scripts` folder. `Vagrantfile` will use this script in order to install needed tools on ypur machine automatically
 
 ## TODO
 
