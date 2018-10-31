@@ -2,16 +2,17 @@
 
 require 'open3'
 
+# run our app
 stdout,stderr = Open3.capture2('./hello.rb')
-puts stdout
 
-stdout.delete!("\n") 
+# remove new line
+output = stdout.delete!("\n") 
 
-
-if stdout == "hello" 
+# perform the test
+# exit one if not good
+if output == "hello" 
    puts "Test passed"
 else
    puts "Test failed"
+   exit 1
 end 
-
-
