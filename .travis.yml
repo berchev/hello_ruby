@@ -1,0 +1,8 @@
+language: generic
+dist: xenial
+sudo: required
+before_install:
+- sudo apt-get update
+- sudo apt-get install -y rbenv ruby-dev ruby-bundler
+script:
+- ruby test.rb
